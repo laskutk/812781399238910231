@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,900');
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 1px 1px 2px #f5d6a1;
+    border: 11px solid transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c62828;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(155, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff5252;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #8b0000;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #fff3e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+@media only screen and (max-width:480px) {
+    ul {
+        position: fixed;
+        display: block;
+        margin-left: 20px;
+        margin-top: 35vw;
+        z-index: 3;
+    }
+
+    .nav {
+        position: fixed;
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        transform: rotate(-90deg);
+        margin-left: 0px;
+        margin-top: 15vw;
+        letter-spacing: 0.2vw;
+        z-index: 3;
+        color: #c62828;
+    }
+
+    li {
+        content:'';
+        height: 40px;
+        width: 5px;
+        transition: width 0.3s ease-in-out;
+    }
+
+    li:hover {
+        transition: width 0.3s ease-in-out;
+        width: 8.3vw;
+    }
+
+    #one {background-color:#ffc107;}
+    #two {background-color:#ff5722;}
+    #three {background-color:#8bc34a;}
+    #four {background-color:#795548;}
+    #five {background-color:#c62828;}
+
+    section { position: relative; display: block; width: 100%; height: 100vh; overflow: hidden; }
+    section .cover { position: absolute; display: block; width: 100%; height: 100%; z-index: 1; }
+    section .cover img #start{ position: absolute; display: block; min-width: 150%; min-height: 150%; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+    section .content { position: absolute; display: block; width: 100%; height: 100%; z-index: 2; }
+    section .text { width: 100%; }
+    .leveler { position: relative; left: 50%; top: 30%; -webkit-transform: translateZ(0px) translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); }
+    #start { position: absolute; padding-top: 70vw; margin-left: 15vw; width: 70vw; overflow: hidden; -webkit-animation: rotation 40s infinite linear; }
+
+    @-webkit-keyframes rotation { from { -webkit-transform: rotate(0deg); } to { -webkit-transform: rotate(359deg); } }
+
+    img { width: 100%; }
+    #title { font-family: 'Montserrat', sans-serif; font-size: 9vw; margin-top: 31vw; margin-left: 17vw; line-height: 6vw; color: #b71c1c; opacity: 1; animation: move 5s }
+    .uppertext { font-family: 'Montserrat', sans-serif; font-size: 2.9vw; letter-spacing: 0.1vw; margin-top: 5vw; margin-left: 17vw; color: #ff6f00; }
+    .scroll { position: relative; font-family: 'Montserrat', sans-serif; font-size: 3vw; font-weight: 900; letter-spacing: 0.3vw; color: #bf360c; margin-left: 30vw; margin-top: 70vw; }
+    .paragraph { width: 70vw; margin-left: 18vw; margin-top: 30vw; font-family: 'Montserrat', sans-serif; font-size: 2.8vw; line-height: 3.4vw; letter-spacing: 0.3vw; color: #4e342e; }
+
+    #one2 { background: linear-gradient(to bottom right, #ffcc80, #ff7043); }
+    #two2 { background: linear-gradient(to bottom right, #ff7043, #ff5722); }
+    #three2 { background: linear-gradient(to bottom right, #8bc34a, #558b2f); }
+    #four2 { background: linear-gradient(to bottom right, #795548, #a1887f); }
+    #five2 { background: linear-gradient(to bottom right, #c62828, #ff5252); }
+
+    .poster { width: 70vw; margin-top: 4vw; margin-left: 18vw; z-index: 1; }
+    #mobiletext { color: #fff8e1; }
+}
+
+@media only screen and (min-width:990px) {
+    ul { position: fixed; display: block; margin-left: -200px; margin-top: -6vw; z-index: 3; }
+    .nav { position: fixed; display: block; font-family: 'Montserrat', sans-serif; font-size: 0.85vw; transform: rotate(-90deg); margin-left: -245px; margin-top: -12vw; letter-spacing: 0.2vw; z-index: 3; color: #c62828; }
+    li { content:''; height: 40px; width: 5px; transition: width 0.3s ease-in-out; }
+    li:hover { transition: width 0.3s ease-in-out; width: 80px; }
+
+    #one {background-color:#ffc107;}
+    #two {background-color:#ff5722;}
+    #three {background-color:#8bc34a;}
+    #four {background-color:#795548;}
+    #five {background-color:#c62828;}
+
+    section { position: relative; margin-left: -10px; display: block; width: 120%; height: 60vw; overflow: hidden; }
+    section .cover { position: absolute; display: block; width: 100%; height: 100%; z-index: 1; }
+    section .cover img #start { position: absolute; display: block; min-width: 100%; min-height: 100%; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+    section .content { position: absolute; display: block; width: 100%; height: 100%; z-index: 2; }
+    section .text { width: 100%; }
+    .leveler { position: relative; left: 50%; top: 30%; -webkit-transform: translateZ(0px) translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); }
+    #start { position: absolute; padding-top: -9vw; margin-left: -5px; width: 38vw; overflow: hidden; -webkit-animation: rotation 180s infinite linear; }
+    img { width: 100%; }
+    #title { position: fixed; font-family: 'Montserrat', sans-serif; font-size: 4.31vw; margin-top: 25%; margin-left: 2%; line-height: 2.63vw; color: #b71c1c; opacity: 1; animation: move 3s }
+    .scroll { color: #bf360c; }
+    .paragraph { color: #3e2723; }
+
+    #one2 { background: linear-gradient(to bottom right, #ffcc80, #ff7043); }
+    #two2 { background: linear-gradient(to bottom right, #ff7043, #ff5722); }
+    #three2 { background: linear-gradient(to bottom right, #8bc34a, #558b2f); }
+    #four2 { background: linear-gradient(to bottom right, #795548, #a1887f); }
+    #five2 { background: linear-gradient(to bottom right, #c62828, #ff5252); }
+
+    .poster { overflow: hidden; width: 350px; margin-top: 6vw; margin-left: 525px; z-index: 1; filter: drop-shadow(4px 10px 15px #ffcc80); }
+}
